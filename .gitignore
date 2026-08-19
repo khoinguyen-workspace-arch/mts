@@ -1,0 +1,20 @@
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Dependencies / build output (not used today, here so they never sneak in)
+node_modules/
+dist/
+.cache/
+
+# Secrets — never commit these
+.env
+.env.*
+*.pem
+*.key
