@@ -1,0 +1,52 @@
+/* ---------------------------------------------------------------
+   site.css — shared base for every More Than Strata page.
+   Keep this file small. Page-specific styling lives in
+   assets/css/<page-slug>.css and is scoped to that page's wrapper
+   class (.mts-rs, .mts-lp) so pages can never break each other.
+   --------------------------------------------------------------- */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #2D2D2D;
+  font-family: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+img, svg, video { max-width: 100%; }
+
+/* Visible keyboard focus — required for accessibility, easy to lose. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #2A7A60;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
+
+/* Placeholder shown when a form has not been given its HubSpot form ID yet.
+   It is deliberately obvious so a missing ID is caught before go-live. */
+.mts-form-missing {
+  border: 2px dashed #CC3333;
+  border-radius: 8px;
+  color: #CC3333;
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 18px;
+}

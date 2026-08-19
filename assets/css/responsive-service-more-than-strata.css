@@ -1,0 +1,396 @@
+@media(max-width:680px){body{padding-bottom:69px}} /* keeps the fixed mobile CTA bar clear of page bottom */
+
+.mts-rs{--green-900:#0D3328;--green-800:#1A5C48;--green-700:#1E6B54;--green-600:#2A7A60;--green-500:#3A9070;--green-400:#5BAE90;--green-300:#88C4A8;--green-200:#C8DED7;--green-100:#E5F4EE;--green-50:#F2FAF6;--dark:#1C2720;--ink:#2D2D2D;--muted:#666666;--line:#DCDCDC;--card-line:#F0F0F0;--white:#FFFFFF;--error:#CC3333;--serif:"DM Serif Display",Georgia,serif;--sans:"DM Sans",system-ui,sans-serif;--radius-card:12px;--radius-button:8px;--radius-pill:9999px;--shadow-card:0 22px 70px rgba(13,51,40,.12);
+background:var(--white);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.mts-rs *{box-sizing:border-box}
+.mts-rs a{color:inherit;text-decoration:none}
+.mts-rs button,.mts-rs input,.mts-rs select{font:inherit}
+.mts-rs img{display:block;max-width:100%}
+.mts-rs [hidden]{display:none!important}
+.mts-rs .shell{margin-inline:auto;width:min(1160px,calc(100% - 48px))}
+.mts-rs .skip-link{background:var(--white);color:var(--green-800);left:16px;padding:10px 14px;position:fixed;top:-80px;z-index:100}
+.mts-rs .skip-link:focus{top:16px}
+.mts-rs .eyebrow{color:var(--green-600);display:block;font-size:13px;font-weight:700;letter-spacing:.09em;margin-bottom:16px;text-transform:uppercase}
+.mts-rs .eyebrow.light{color:var(--green-600)}
+.mts-rs .section-title{color:var(--green-800);font:400 clamp(34px,4.3vw,48px)/1.08 var(--serif);letter-spacing:-.02em;margin:0}
+.mts-rs .section-lead{color:var(--muted);font-size:18px;line-height:1.65;margin:0}
+.mts-rs .button{align-items:center;background:var(--green-800);border:2px solid var(--green-800);border-radius:var(--radius-button);color:var(--white);cursor:pointer;display:inline-flex;font-size:16px;font-weight:600;gap:10px;justify-content:center;letter-spacing:.02em;min-height:52px;padding:12px 24px;transition:background .16s,border-color .16s,transform .16s}
+.mts-rs .button:hover{background:var(--green-700);border-color:var(--green-700);transform:translateY(-1px)}
+.mts-rs .button.light{background:var(--white);border-color:var(--white);color:var(--green-800)}
+.mts-rs .button.light:hover{background:var(--green-100);border-color:var(--green-100)}
+.mts-rs .button.outline{background:transparent;border-color:var(--white);color:var(--white)}
+.mts-rs .button.outline:hover{background:rgba(255,255,255,.1)}
+.mts-rs .arrow{font-size:17px;line-height:1}
+.mts-rs [id]{scroll-margin-top:100px}
+
+/* LP header */
+.mts-rs .lp-header{align-items:center;background:rgba(255,255,255,.97);backdrop-filter:blur(14px);border-bottom:1px solid var(--green-200);box-shadow:0 5px 24px rgba(13,51,40,.06);display:grid;gap:20px;grid-template-columns:1fr auto 1fr;min-height:72px;padding:0 4vw;position:sticky;top:0;z-index:50}
+.mts-rs .lp-header>a:first-child{justify-self:start}
+.mts-rs .lp-nav{display:flex;gap:28px;justify-self:center}
+.mts-rs .lp-nav a{color:var(--green-700);font-size:14px;font-weight:600;white-space:nowrap}
+.mts-rs .lp-nav a:hover{color:var(--green-900)}
+.mts-rs .lp-header>a:first-child{justify-self:start}
+.mts-rs .lp-nav{display:flex;gap:28px;justify-self:center}
+.mts-rs .lp-nav a{color:var(--green-700);font-size:14px;font-weight:600;white-space:nowrap}
+.mts-rs .lp-nav a:hover{color:var(--green-900)}.mts-rs .lp-header .logo{display:block;height:40px;width:auto}
+.mts-rs .lp-header-actions{align-items:center;display:flex;gap:22px;justify-self:end}
+.mts-rs .lp-phone{color:var(--green-800);font-size:14px;font-weight:700;white-space:nowrap}
+.mts-rs .lp-header .button{font-size:14px;gap:10px;min-height:44px;padding:9px 18px;white-space:nowrap}
+
+/* Hero */
+.mts-rs .hero{background:linear-gradient(90deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.9) 52%,rgba(242,250,246,.78) 100%),url("https://morethanstrata.com.au/wp-content/uploads/2026/07/Background.png") center 52%/cover no-repeat;color:var(--ink);min-height:760px;overflow:hidden;padding:92px 0 76px;position:relative}
+.mts-rs .hero-layout{align-items:center;display:grid;gap:clamp(48px,6vw,80px);grid-template-columns:1.08fr .82fr;position:relative;z-index:2}
+.mts-rs .hero-copy{grid-column:1;grid-row:1;padding-top:18px}
+.mts-rs .hero .form-card{grid-column:2;grid-row:1}
+.mts-rs .hero-badge{align-items:center;background:var(--green-100);border:1px solid var(--green-200);border-radius:var(--radius-pill);color:var(--green-700);display:inline-flex;font-size:13px;font-weight:600;gap:8px;padding:7px 13px}
+.mts-rs .hero h1{color:var(--green-900);font:400 clamp(48px,5.6vw,66px)/1.02 var(--serif);letter-spacing:-.03em;margin:22px 0;max-width:710px}
+.mts-rs .hero h1 span{color:var(--green-600);display:block}
+.mts-rs .hero-sub{color:var(--muted);font-size:19px;line-height:1.6;margin:0;max-width:650px}
+.mts-rs .hero-sub strong{color:var(--green-900)}
+
+/* Form card + HubSpot form styling */
+.mts-rs .form-card{background:var(--white);border:1px solid var(--green-200);border-left:4px solid var(--green-400);border-radius:var(--radius-card);box-shadow:0 18px 50px rgba(13,51,40,.1);color:var(--ink);padding:31px 30px 27px;position:relative}
+.mts-rs .form-kicker{color:var(--green-600);font-size:13px;font-weight:700;letter-spacing:.09em;text-transform:uppercase}
+.mts-rs .form-card h2{color:var(--green-800);font:400 33px/1.15 var(--serif);margin:8px 0 10px}
+.mts-rs .form-intro{color:var(--muted);font-size:16px;line-height:1.6;margin:0 0 18px}
+.mts-rs .form-card .hs-form fieldset{max-width:100%!important}
+.mts-rs .form-card .hs-form-field{margin-bottom:13px}
+.mts-rs .form-card .hs-form label{color:var(--ink);display:block;font-size:15px;font-weight:600;margin-bottom:7px}
+.mts-rs .form-card .hs-input{background:var(--white);border:1.5px solid var(--line);border-radius:var(--radius-button);color:var(--ink);font-family:var(--sans);font-size:16px;min-width:0;outline:none;padding:13px 14px;width:100%!important}
+.mts-rs .form-card .hs-input:focus{border-color:var(--green-600);box-shadow:0 0 0 3px rgba(26,92,72,.12)}
+.mts-rs .form-card .hs-button{background:var(--green-800);border:2px solid var(--green-800);border-radius:var(--radius-button);color:var(--white);cursor:pointer;font-family:var(--sans);font-size:16px;font-weight:600;letter-spacing:.02em;margin-top:4px;min-height:52px;padding:12px 24px;transition:background .16s,border-color .16s;width:100%}
+.mts-rs .form-card .hs-button:hover{background:var(--green-700);border-color:var(--green-700)}
+.mts-rs .form-card .hs-error-msgs{color:var(--error);font-size:13px;list-style:none;margin:4px 0 0;padding:0}
+.mts-rs .form-card .hs-form-required{color:var(--error)}
+.mts-rs .form-card .submitted-message{color:var(--ink);font-size:16px;line-height:1.65;padding:24px 0}
+.mts-rs .form-trust{align-items:center;color:var(--muted);display:flex;font-size:12px;gap:7px;justify-content:center;margin:12px 0 0}
+.mts-rs .form-trust b{color:var(--green-600)}
+
+/* Proof strip */
+.mts-rs .proof-strip{background:var(--green-50);color:var(--green-800);display:grid;grid-template-columns:repeat(4,1fr);padding:0 5vw;position:relative;z-index:3}
+.mts-rs .proof-item{border-right:1px solid var(--green-200);padding:29px 18px;text-align:center}
+.mts-rs .proof-item.proof-primary{background:var(--green-100);color:var(--green-900);padding:29px 18px}
+.mts-rs .proof-item.proof-primary span{color:var(--muted)}
+.mts-rs .proof-item:last-child{border-right:0}
+.mts-rs .proof-item strong{display:block;font:400 39px/1 var(--serif)}
+.mts-rs .proof-item strong small{font-size:21px}
+.mts-rs .proof-item span{color:var(--muted);display:block;font-size:14px;margin-top:7px}
+
+/* Service pillars */
+.mts-rs .outcomes{background:var(--white);padding:94px 0 100px}
+.mts-rs .pillars-head{align-items:end;display:grid;gap:55px;grid-template-columns:1.05fr .95fr;margin-bottom:52px}
+.mts-rs .pillars-head .section-lead{max-width:500px}
+.mts-rs .pillar-mosaic{display:grid;gap:16px;grid-template-columns:repeat(12,1fr);grid-template-rows:auto auto}
+.mts-rs .pillar-card{background:var(--white);border:1px solid var(--green-200);border-left:4px solid var(--green-400);border-radius:var(--radius-card);min-height:250px;overflow:hidden;padding:29px 30px;position:relative}
+.mts-rs .pillar-top{align-items:center;display:flex;gap:11px;position:relative;z-index:2}
+.mts-rs .pillar-top span{align-items:center;border:1px solid currentColor;border-radius:5px;display:inline-flex;font-size:11px;font-weight:700;height:30px;justify-content:center;opacity:.65;width:30px}
+.mts-rs .pillar-top strong{color:var(--green-700);font-size:13px;font-weight:700;letter-spacing:.11em;text-transform:uppercase}
+.mts-rs .pillar-card h3{color:var(--green-800);font:400 28px/1.12 var(--serif);margin:47px 0 11px;max-width:360px}
+.mts-rs .pillar-card p{color:var(--muted);font-size:16px;line-height:1.65;margin:0;max-width:480px;position:relative;z-index:2}
+.mts-rs .pillar-responsive{background:linear-gradient(90deg,rgba(13,51,40,.98) 0%,rgba(26,92,72,.94) 54%,rgba(26,92,72,.72) 100%),url("https://morethanstrata.com.au/wp-content/uploads/2026/06/more-available-usps-illus.png") right 25% center/cover no-repeat;border-color:rgba(255,255,255,.16);color:var(--white);grid-column:span 7;grid-row:span 2;min-height:520px;padding:37px 38px}
+.mts-rs .pillar-responsive .pillar-top strong,.mts-rs .pillar-responsive .pillar-top span{color:var(--green-200)}
+.mts-rs .responsive-proof{align-items:end;display:flex;gap:24px;margin:72px 0 32px;position:relative;z-index:2}
+.mts-rs .responsive-proof>strong{color:var(--white);font:400 clamp(70px,8vw,112px)/.8 var(--serif);letter-spacing:-.05em}
+.mts-rs .responsive-proof>span{color:var(--green-200);font-size:15px;font-weight:600;line-height:1.3;padding-bottom:4px;text-transform:uppercase}
+.mts-rs .pillar-responsive p{color:rgba(255,255,255,.86);font-size:17px;max-width:550px}
+.mts-rs .mini-proof{border-top:1px solid rgba(255,255,255,.24);bottom:35px;display:flex;gap:25px;left:38px;padding-top:18px;position:absolute;right:38px;z-index:2}
+.mts-rs .mini-proof span{color:rgba(255,255,255,.88);font-size:13px;font-weight:600}
+.mts-rs .pillar-progress{background:var(--green-50);grid-column:span 5}
+.mts-rs .pillar-transparent{background:var(--white);grid-column:span 5;min-height:285px}
+.mts-rs .pillar-independent{background:var(--green-50);grid-column:span 6;min-height:285px}
+.mts-rs .pillar-freedom{background:linear-gradient(rgba(13,51,40,.9),rgba(13,51,40,.86)),url("https://morethanstrata.com.au/wp-content/uploads/2026/07/Parramatta.png") center/cover no-repeat;border-color:rgba(255,255,255,.16);color:var(--white);grid-column:span 6;min-height:285px}
+.mts-rs .pillar-freedom .pillar-top strong,.mts-rs .pillar-freedom .pillar-top span{color:var(--green-200)}
+.mts-rs .pillar-freedom h3{color:var(--white)}
+.mts-rs .pillar-freedom p{color:rgba(255,255,255,.86)}
+.mts-rs .pillar-transparent h3,.mts-rs .pillar-independent h3,.mts-rs .pillar-freedom h3{margin-top:43px}
+.mts-rs .outcomes-action{align-items:center;display:flex;gap:25px;justify-content:space-between;margin-top:34px}
+.mts-rs .outcomes-action p{color:var(--green-800);font:400 23px/1.25 var(--serif);margin:0}
+
+/* Chasing */
+.mts-rs .chasing{background:var(--green-50);overflow:hidden;padding:105px 0;position:relative}
+.mts-rs .chasing-layout{align-items:center;display:grid;gap:clamp(60px,9vw,120px);grid-template-columns:1.05fr .95fr;position:relative;z-index:2}
+.mts-rs .message-stack{min-height:450px;position:relative}
+.mts-rs .message-stack::before{background:linear-gradient(rgba(26,92,72,.72),rgba(13,51,40,.8)),url("https://morethanstrata.com.au/wp-content/uploads/2026/07/Parramatta.png") center/cover no-repeat;border:1px solid var(--green-300);border-radius:var(--radius-card);bottom:6px;content:"";left:42px;position:absolute;right:38px;top:30px}
+.mts-rs .message{background:var(--white);border:1px solid var(--card-line);border-left:4px solid var(--green-400);border-radius:var(--radius-card);box-shadow:0 18px 55px rgba(13,51,40,.11);max-width:500px;padding:20px 22px;position:absolute;width:88%}
+.mts-rs .message:nth-child(1){left:0;top:0}
+.mts-rs .message:nth-child(2){right:0;top:132px}
+.mts-rs .message:nth-child(3){left:8%;top:264px}
+.mts-rs .message-meta{align-items:center;color:var(--muted);display:flex;font-size:13px;justify-content:space-between;margin-bottom:10px}
+.mts-rs .message-meta strong{color:var(--green-600);font-weight:700}
+.mts-rs .message p{color:var(--ink);font-size:16px;margin:0}
+.mts-rs .chasing-copy .section-title span{color:var(--green-600)}
+.mts-rs .chasing-copy .section-lead{margin-top:20px}
+.mts-rs .check-list{display:grid;gap:13px;list-style:none;margin:27px 0 0;padding:0}
+.mts-rs .check-list li{align-items:flex-start;color:var(--ink);display:grid;font-size:16px;gap:11px;grid-template-columns:22px 1fr}
+.mts-rs .check-list i{align-items:center;background:var(--green-100);border-radius:6px;color:var(--green-800);display:flex;font-style:normal;font-weight:700;height:22px;justify-content:center;width:22px}
+
+/* Request path */
+.mts-rs .request-path{background:var(--white);color:var(--ink);overflow:hidden;padding:104px 0 108px;position:relative}
+.mts-rs .path-head{align-items:end;display:grid;gap:60px;grid-template-columns:1.1fr .9fr;position:relative;z-index:2}
+.mts-rs .journey{display:grid;gap:16px;grid-template-columns:repeat(4,1fr);margin-top:62px;position:relative;z-index:2}
+.mts-rs .journey::before{background:var(--green-200);content:"";height:1px;left:8%;position:absolute;right:8%;top:38px}
+.mts-rs .journey-card{background:var(--green-50);border:1px solid var(--green-200);border-left:4px solid var(--green-400);border-radius:var(--radius-card);box-shadow:0 12px 32px rgba(13,51,40,.06);min-height:252px;padding:25px 21px;position:relative}
+.mts-rs .journey-card:nth-child(even){margin-top:38px}
+.mts-rs .journey-number{align-items:center;background:var(--green-100);border-radius:8px;color:var(--green-800);display:flex;font:400 20px/1 var(--serif);height:48px;justify-content:center;margin-bottom:28px;position:relative;width:48px;z-index:2}
+.mts-rs .journey-card span{color:var(--green-600);font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.mts-rs .journey-card h3{color:var(--green-800);font:400 25px/1.15 var(--serif);margin:8px 0 10px}
+.mts-rs .journey-card p{color:var(--muted);font-size:15px;line-height:1.6;margin:0}
+.mts-rs .routing-band{align-items:center;background:var(--green-100);border:1px solid var(--green-200);border-left:4px solid var(--green-400);border-radius:var(--radius-card);color:var(--ink);display:grid;gap:20px;grid-template-columns:1.1fr 1.9fr auto;margin-top:42px;padding:25px 27px;position:relative;z-index:2}
+.mts-rs .routing-band strong{color:var(--green-800);font:400 23px/1.2 var(--serif)}
+.mts-rs .route-tags{display:flex;flex-wrap:wrap;gap:8px}
+.mts-rs .route-tags span{background:var(--white);border-radius:var(--radius-pill);color:var(--green-700);font-size:13px;font-weight:600;padding:7px 11px}
+
+/* People */
+.mts-rs .people{background:var(--green-50);overflow:hidden;padding:108px 0;position:relative}
+.mts-rs .people-layout{align-items:center;display:grid;gap:clamp(60px,8vw,105px);grid-template-columns:.92fr 1.08fr;position:relative;z-index:2}
+.mts-rs .people-copy .section-lead{margin-top:20px}
+.mts-rs .people-proof{border-left:4px solid var(--green-400);margin:29px 0 0;padding:3px 0 3px 20px}
+.mts-rs .people-proof strong{color:var(--green-800);display:block;font:400 24px/1.2 var(--serif)}
+.mts-rs .people-proof span{color:var(--muted);display:block;font-size:15px;margin-top:6px}
+.mts-rs .portrait-grid{display:grid;gap:14px;grid-template-columns:1fr 1fr;min-height:630px;position:relative}
+.mts-rs .portrait-card{border-radius:var(--radius-card);min-height:295px;overflow:hidden;position:relative}
+.mts-rs .portrait-card:nth-child(2),.mts-rs .portrait-card:nth-child(4){transform:translateY(36px)}
+.mts-rs .portrait-card img{height:100%;object-fit:cover;object-position:center top;position:absolute;width:100%}
+.mts-rs .portrait-card::after{background:linear-gradient(transparent 40%,rgba(13,51,40,.93));content:"";inset:0;position:absolute}
+.mts-rs .portrait-info{bottom:0;color:var(--white);left:0;padding:22px 20px;position:absolute;right:0;z-index:2}
+.mts-rs .portrait-info strong{display:block;font:400 21px/1.15 var(--serif)}
+.mts-rs .portrait-info span{color:var(--green-300);display:block;font-size:13px;font-weight:600;line-height:1.4;margin-top:5px}
+.mts-rs .credential-bar{align-items:center;background:var(--white);border:1px solid var(--green-200);border-left:4px solid var(--green-400);border-radius:var(--radius-card);display:grid;gap:28px;grid-template-columns:1fr auto;margin-top:68px;padding:21px 25px;position:relative;z-index:2}
+.mts-rs .credential-bar strong{color:var(--green-800);display:block;font:400 21px/1.2 var(--serif)}
+.mts-rs .credential-bar span{color:var(--muted);display:block;font-size:15px;margin-top:4px}
+.mts-rs .credential-logos{align-items:center;display:flex;gap:14px}
+.mts-rs .credential-logos img{background:var(--white);border:1px solid var(--card-line);border-radius:50%;height:66px;object-fit:contain;padding:6px;width:66px}
+
+/* Visibility */
+.mts-rs .visibility{background:var(--white);padding:108px 0}
+.mts-rs .visibility-layout{align-items:center;display:grid;gap:clamp(60px,8vw,105px);grid-template-columns:1.1fr .9fr}
+.mts-rs .visibility-photo{background:linear-gradient(180deg,rgba(13,51,40,.18),rgba(13,51,40,.68)),url("https://morethanstrata.com.au/wp-content/uploads/2023/01/How-Can-I-Switch-Strata-Management-The-4-Steps-Involved.jpg") center/cover no-repeat;border:1px solid var(--green-200);border-radius:var(--radius-card);box-shadow:var(--shadow-card);min-height:540px;overflow:hidden;position:relative}
+.mts-rs .visibility-photo-message{background:rgba(13,51,40,.92);border-left:4px solid var(--green-400);border-radius:var(--radius-card);bottom:28px;color:var(--white);font:400 29px/1.16 var(--serif);left:28px;padding:22px 24px;position:absolute;right:28px}
+.mts-rs .visibility-copy .section-lead{margin-top:20px}
+.mts-rs .visibility-points{display:grid;gap:0;margin:27px 0 0}
+.mts-rs .visibility-point{border-top:1px solid var(--green-200);display:grid;gap:13px;grid-template-columns:35px 1fr;padding:17px 0}
+.mts-rs .visibility-point b{color:var(--green-400);font:400 27px/1 var(--serif)}
+.mts-rs .visibility-point strong{color:var(--green-800);display:block;font-size:16px;font-weight:600}
+.mts-rs .visibility-point span{color:var(--muted);display:block;font-size:15px;margin-top:3px}
+
+/* Guarantee */
+.mts-rs .guarantee-section{background:var(--green-50);color:var(--ink);display:grid;grid-template-columns:.92fr 1.08fr;min-height:610px;overflow:hidden}
+.mts-rs .guarantee-photo{background:linear-gradient(90deg,rgba(13,51,40,.08),rgba(13,51,40,.62)),url("https://morethanstrata.com.au/wp-content/uploads/2020/03/CONCIERGE-GEORGE-FETTING-002.jpg") center/cover;min-height:610px;position:relative}
+.mts-rs .guarantee-stamp{align-items:flex-start;background:var(--white);border:1px solid var(--green-200);border-left:4px solid var(--green-400);border-radius:var(--radius-card);bottom:32px;color:var(--green-800);display:flex;flex-direction:column;justify-content:center;padding:22px 25px;position:absolute;right:32px;text-align:left;z-index:2}
+.mts-rs .guarantee-stamp strong{font:400 48px/.9 var(--serif);letter-spacing:-.03em}
+.mts-rs .guarantee-stamp span{font-size:13px;font-weight:700;letter-spacing:.08em;line-height:1.35;margin-top:8px;text-transform:uppercase}
+.mts-rs .guarantee-copy{align-content:center;display:grid;padding:78px clamp(50px,7vw,108px);position:relative}
+.mts-rs .guarantee-copy::before{background:var(--green-400);content:"";height:4px;left:0;position:absolute;top:0;width:100%}
+.mts-rs .guarantee-copy h2{color:var(--green-800);font:400 clamp(37px,4.6vw,52px)/1.06 var(--serif);letter-spacing:-.02em;margin:0}
+.mts-rs .guarantee-copy h2 span{color:var(--green-600)}
+.mts-rs .guarantee-copy>p{color:var(--muted);font-size:17px;line-height:1.7;margin:22px 0 0;max-width:600px}
+.mts-rs .guarantee-copy>p strong{color:var(--green-900)}
+.mts-rs .guarantee-support{border-bottom:1px solid var(--green-200);border-top:1px solid var(--green-200);display:grid;grid-template-columns:1fr 1fr;margin:30px 0}
+.mts-rs .guarantee-support div{padding:17px 12px 17px 0}
+.mts-rs .guarantee-support div+div{border-left:1px solid var(--green-200);padding-left:20px}
+.mts-rs .guarantee-support strong{color:var(--green-800);display:block;font:400 24px/1 var(--serif)}
+.mts-rs .guarantee-support span{color:var(--muted);display:block;font-size:14px;margin-top:5px}
+.mts-rs .guarantee-copy .button{justify-self:start}
+
+/* Evidence and reviews */
+.mts-rs .evidence{background:var(--white);padding:105px 0}
+.mts-rs .evidence-grid{align-items:stretch;display:grid;gap:22px;grid-template-columns:.82fr 1.18fr}
+.mts-rs .number-panel{background:var(--green-100);border:1px solid var(--green-200);border-left:4px solid var(--green-400);border-radius:var(--radius-card);color:var(--green-900);display:grid;min-height:610px;padding:44px 38px}
+.mts-rs .number-panel .eyebrow{align-self:start}
+.mts-rs .number-main{align-self:center}
+.mts-rs .number-main strong{color:var(--green-900);display:block;font:400 clamp(68px,8vw,102px)/.9 var(--serif);letter-spacing:-.04em}
+.mts-rs .number-main span{color:var(--green-700);display:block;font-size:17px;font-weight:600;margin-top:15px}
+.mts-rs .number-foot{align-self:end;border-top:1px solid var(--green-200);display:grid;gap:10px;grid-template-columns:1fr 1fr;padding-top:20px}
+.mts-rs .number-foot strong{display:block;font:400 27px/1 var(--serif)}
+.mts-rs .number-foot span{color:var(--muted);font-size:13px}
+.mts-rs .rescue-proof{border-top:1px solid var(--green-200);display:grid;gap:6px;margin-top:21px;padding-top:19px}
+.mts-rs .rescue-proof strong{color:var(--green-800);font-size:15px;font-weight:500;line-height:1.5}
+.mts-rs .review-stack{display:grid;gap:18px}
+.mts-rs .reviews-head{align-items:end;display:flex;gap:30px;justify-content:space-between;padding:2px 5px 8px}
+.mts-rs .reviews-head .section-title{font-size:clamp(31px,3.4vw,42px)}
+.mts-rs .reviews-head p{color:var(--muted);font-size:16px;margin:0;max-width:210px;text-align:right}
+.mts-rs .quote{background:var(--green-50);border:1px solid var(--card-line);border-left:4px solid var(--green-400);border-radius:var(--radius-card);margin:0;padding:25px 27px}
+.mts-rs .quote:nth-child(3){margin-left:42px}
+.mts-rs .stars{color:var(--green-600);font-size:12px;letter-spacing:.12em;margin-bottom:11px}
+.mts-rs .quote blockquote{color:var(--ink);font:italic 400 17px/1.7 var(--sans);margin:0 0 13px}
+.mts-rs .quote figcaption{color:var(--green-600);font-size:14px;font-weight:600}
+.mts-rs .review-trust{align-items:center;background:var(--green-100);border-radius:var(--radius-card);display:flex;gap:15px;justify-content:space-between;padding:18px 21px}
+.mts-rs .review-trust strong{color:var(--green-800);font:400 22px/1.2 var(--serif)}
+.mts-rs .trust-tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}
+.mts-rs .trust-tags span{background:var(--white);border-radius:var(--radius-pill);color:var(--green-700);font-size:13px;font-weight:600;padding:5px 10px}
+.mts-rs .communities{background:var(--green-50);padding:105px 0 112px}
+.mts-rs .communities-head{align-items:end;display:grid;gap:54px;grid-template-columns:1fr .82fr}
+.mts-rs .communities-head .section-lead{justify-self:end;max-width:520px}
+.mts-rs .community-grid{display:grid;gap:18px;grid-template-columns:repeat(12,minmax(0,1fr));margin-top:48px}
+.mts-rs .community-card{background:var(--green-800);border-radius:var(--radius-card);color:var(--white);grid-column:span 3;isolation:isolate;min-height:285px;overflow:hidden;position:relative}
+.mts-rs .community-card.wide{grid-column:span 6;min-height:370px}
+.mts-rs .community-card::after{background:linear-gradient(180deg,rgba(13,51,40,.02) 28%,rgba(13,51,40,.9) 100%);content:"";inset:0;position:absolute;z-index:-1}
+.mts-rs .community-card img{height:100%;inset:0;object-fit:cover;position:absolute;transition:transform .45s ease;width:100%;z-index:-2}
+.mts-rs .community-card:hover img{transform:scale(1.025)}
+.mts-rs .community-card-copy{bottom:0;left:0;padding:25px 24px;position:absolute;right:0}
+.mts-rs .community-card.wide .community-card-copy{padding:30px 31px}
+.mts-rs .community-card h3{font:400 26px/1.08 var(--serif);margin:0}
+.mts-rs .community-card.wide h3{font-size:32px}
+.mts-rs .community-card p{color:rgba(255,255,255,.78);font-size:14px;font-weight:600;line-height:1.45;margin:7px 0 0}
+.mts-rs .communities-action{border-top:1px solid var(--green-200);margin-top:36px;padding-top:28px;text-align:center}
+.mts-rs .communities-action p{color:var(--green-800);font:400 25px/1.25 var(--serif);margin:0}
+@media(max-width:1050px){
+.mts-rs .communities-head{grid-template-columns:1fr}
+.mts-rs .communities-head .section-lead{justify-self:start;max-width:760px}
+.mts-rs .community-card,.mts-rs .community-card.wide{grid-column:span 6;min-height:340px}
+}
+@media(max-width:680px){
+.mts-rs .communities{padding:78px 0}
+.mts-rs .communities-head{gap:22px}
+.mts-rs .community-grid{grid-template-columns:1fr;margin-top:38px}
+.mts-rs .community-card,.mts-rs .community-card.wide{grid-column:1;min-height:315px}
+.mts-rs .community-card-copy,.mts-rs .community-card.wide .community-card-copy{padding:24px 22px}
+.mts-rs .community-card h3,.mts-rs .community-card.wide h3{font-size:28px}
+}
+/* Next step */
+.mts-rs .next-step{background:var(--green-50);display:grid;grid-template-columns:.88fr 1.12fr;min-height:680px}
+.mts-rs .next-step-photo{background:linear-gradient(rgba(13,51,40,.16),rgba(13,51,40,.44)),url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1500&q=84") center/cover;min-height:680px;position:relative} /* REPLACE: WP library office/people shot, ≥1500×1100, subject centred — light overlay, image shows */
+.mts-rs .photo-quote{background:var(--white);border-left:4px solid var(--green-400);border-radius:var(--radius-card);bottom:55px;left:9%;max-width:410px;padding:25px 27px;position:absolute;right:9%}
+.mts-rs .photo-quote strong{color:var(--green-800);display:block;font:400 25px/1.15 var(--serif)}
+.mts-rs .photo-quote span{color:var(--muted);display:block;font-size:15px;margin-top:8px}
+.mts-rs .next-step-copy{align-content:center;display:grid;padding:75px clamp(45px,7vw,100px)}
+.mts-rs .next-step-list{display:grid;margin-top:33px}
+.mts-rs .next-item{border-top:1px solid var(--green-200);display:grid;gap:20px;grid-template-columns:48px 1fr;padding:18px 0}
+.mts-rs .next-number{color:var(--green-400);font:400 31px/1 var(--serif)}
+.mts-rs .next-item h3{color:var(--green-800);font:400 21px/1.15 var(--serif);margin:0 0 5px}
+.mts-rs .next-item p{color:var(--muted);font-size:15px;line-height:1.55;margin:0}
+.mts-rs .next-step-copy .button{justify-self:start;margin-top:26px}
+
+/* Final */
+.mts-rs .final{background:linear-gradient(90deg,rgba(13,51,40,.98),rgba(13,51,40,.84)),url("https://morethanstrata.com.au/wp-content/uploads/2020/03/CONCIERGE-GEORGE-FETTING-002.jpg") center 46%/cover;color:var(--white);overflow:hidden;padding:94px 0;position:relative}
+.mts-rs .final-grid{align-items:center;display:grid;gap:70px;grid-template-columns:1fr auto;position:relative;z-index:2}
+.mts-rs .final .eyebrow,.mts-rs .final .eyebrow.light{color:var(--green-300)}
+.mts-rs .final h2{color:var(--white);font:400 clamp(38px,5vw,56px)/1.05 var(--serif);letter-spacing:-.02em;margin:0;max-width:730px}
+.mts-rs .final h2 span{color:var(--green-300)}
+.mts-rs .final p{color:rgba(255,255,255,.8);font-size:17px;margin:20px 0 0;max-width:650px}
+.mts-rs .final-actions{display:grid;gap:12px;min-width:285px}
+.mts-rs .final-actions .button{width:100%}
+.mts-rs .final .button{background:var(--white);border-color:var(--white);color:var(--green-800)}
+.mts-rs .final .button:hover{background:var(--green-100);border-color:var(--green-100)}
+.mts-rs .final .button.outline{background:transparent;border-color:var(--white);color:var(--white)}
+.mts-rs .final .button.outline:hover{background:rgba(255,255,255,.1)}
+
+/* LP footer */
+.mts-rs .lp-footer{align-items:center;background:#0A261E;color:var(--white);display:grid;gap:26px;grid-template-columns:auto 1fr auto;padding:38px 5vw}
+.mts-rs .lp-footer .logo{display:block;filter:brightness(0) invert(1);height:36px;width:auto}
+.mts-rs .lp-footer p{color:rgba(255,255,255,.55);font-size:11px;line-height:1.6;margin:0;text-align:center}
+.mts-rs .lp-footer-contact{display:flex;flex-wrap:wrap;gap:10px 20px;justify-content:flex-end}
+.mts-rs .lp-footer-contact a{color:var(--green-300);font-size:12px;font-weight:600;white-space:nowrap}
+
+/* Mobile sticky CTA */
+.mts-rs .mobile-cta{display:none}
+
+/* Responsive */
+@media(max-width:1050px){
+.mts-rs .lp-header{grid-template-columns:1fr auto}
+.mts-rs .lp-nav{display:none}
+.mts-rs .hero{background:linear-gradient(rgba(255,255,255,.92),rgba(242,250,246,.88)),url("https://morethanstrata.com.au/wp-content/uploads/2026/07/Background.png") center/cover no-repeat;min-height:auto}
+.mts-rs .hero-layout{grid-template-columns:1fr}
+.mts-rs .hero-copy{grid-column:1;grid-row:auto;padding-top:10px}
+.mts-rs .hero .form-card{grid-column:1;grid-row:auto;order:2}
+.mts-rs .form-card{margin-inline:auto;max-width:620px}
+.mts-rs .pillars-head{grid-template-columns:1fr}
+.mts-rs .pillar-responsive{grid-column:span 12;grid-row:auto}
+.mts-rs .pillar-progress{grid-column:span 12}
+.mts-rs .pillar-transparent,.mts-rs .pillar-independent,.mts-rs .pillar-freedom{grid-column:span 4}
+.mts-rs .chasing-layout,.mts-rs .people-layout,.mts-rs .visibility-layout,.mts-rs .evidence-grid{grid-template-columns:1fr}
+.mts-rs .message-stack{margin-inline:auto;max-width:700px;width:100%}
+.mts-rs .chasing-copy{max-width:760px}
+.mts-rs .path-head{grid-template-columns:1fr}
+.mts-rs .journey{grid-template-columns:repeat(2,1fr)}
+.mts-rs .journey-card:nth-child(even){margin-top:0}
+.mts-rs .routing-band{grid-template-columns:1fr}
+.mts-rs .routing-band .button{justify-self:start}
+.mts-rs .people-copy{max-width:760px}
+.mts-rs .portrait-grid{margin-inline:auto;max-width:760px;width:100%}
+.mts-rs .visibility-photo{margin-inline:auto;max-width:720px;width:100%}
+.mts-rs .visibility-copy{max-width:720px}
+.mts-rs .guarantee-section,.mts-rs .next-step{grid-template-columns:1fr}
+.mts-rs .guarantee-photo{min-height:440px}
+.mts-rs .guarantee-stamp{bottom:28px;right:28px}
+.mts-rs .next-step-photo{min-height:520px}
+.mts-rs .number-panel{min-height:560px}
+.mts-rs .final-grid{align-items:start;grid-template-columns:1fr}
+.mts-rs .final-actions{max-width:370px}
+}
+@media(max-width:680px){
+.mts-rs .shell{width:calc(100% - 36px)}
+.mts-rs .lp-header{min-height:62px;padding:0 18px}
+.mts-rs .lp-header .logo{height:32px}
+.mts-rs .lp-phone{display:none}
+.mts-rs .hero{background:linear-gradient(rgba(255,255,255,.95),rgba(242,250,246,.91)),url("https://morethanstrata.com.au/wp-content/uploads/2026/07/Background.png") center/cover no-repeat;padding:64px 0 62px}
+.mts-rs .hero h1{font-size:48px}
+.mts-rs .hero-sub{font-size:16px}
+.mts-rs .form-card{padding:25px 19px}
+.mts-rs .proof-strip{grid-template-columns:1fr 1fr;padding:8px 18px}
+.mts-rs .proof-item{border-bottom:1px solid var(--green-200);padding:18px 8px}
+.mts-rs .proof-item.proof-primary{padding:18px 8px}
+.mts-rs .proof-item:nth-child(even){border-right:0}
+.mts-rs .proof-item:nth-child(3),.mts-rs .proof-item:nth-child(4){border-bottom:0}
+.mts-rs .proof-item strong{font-size:33px}
+.mts-rs .proof-item span{font-size:13px}
+.mts-rs .outcomes{padding:76px 0}
+.mts-rs .pillars-head{gap:24px;margin-bottom:38px}
+.mts-rs .pillar-mosaic{grid-template-columns:1fr}
+.mts-rs .pillar-responsive,.mts-rs .pillar-progress,.mts-rs .pillar-transparent,.mts-rs .pillar-independent,.mts-rs .pillar-freedom{grid-column:1;min-height:0}
+.mts-rs .pillar-card{padding:25px 22px}
+.mts-rs .pillar-responsive{min-height:475px;padding:28px 23px}
+.mts-rs .responsive-proof{align-items:start;display:grid;gap:14px;margin:59px 0 25px}
+.mts-rs .responsive-proof>strong{font-size:79px}
+.mts-rs .responsive-proof>span{padding:0}
+.mts-rs .pillar-responsive p{font-size:16px}
+.mts-rs .mini-proof{bottom:27px;display:grid;gap:7px;left:23px;right:23px}
+.mts-rs .pillar-card h3,.mts-rs .pillar-transparent h3,.mts-rs .pillar-independent h3,.mts-rs .pillar-freedom h3{margin-top:34px}
+.mts-rs .outcomes-action{align-items:flex-start;display:grid}
+.mts-rs .chasing,.mts-rs .request-path,.mts-rs .people,.mts-rs .visibility,.mts-rs .evidence{padding:78px 0}
+.mts-rs .message-stack{min-height:465px}
+.mts-rs .message{width:94%}
+.mts-rs .message:nth-child(2){top:142px}
+.mts-rs .message:nth-child(3){left:2%;top:284px}
+.mts-rs .journey{grid-template-columns:1fr;margin-top:48px}
+.mts-rs .journey-card{min-height:215px}
+.mts-rs .journey::before{display:none}
+.mts-rs .routing-band{padding:22px 18px}
+.mts-rs .portrait-grid{gap:10px;min-height:520px}
+.mts-rs .portrait-card{min-height:245px}
+.mts-rs .portrait-card:nth-child(2),.mts-rs .portrait-card:nth-child(4){transform:translateY(20px)}
+.mts-rs .portrait-info{padding:16px 13px}
+.mts-rs .portrait-info strong{font-size:17px}
+.mts-rs .portrait-info span{font-size:12px}
+.mts-rs .credential-bar{align-items:start;grid-template-columns:1fr;margin-top:48px}
+.mts-rs .credential-logos{justify-content:flex-start}
+.mts-rs .visibility-photo{min-height:420px}
+.mts-rs .visibility-photo-message{bottom:18px;font-size:24px;left:18px;padding:18px 19px;right:18px}
+.mts-rs .guarantee-photo{min-height:330px}
+.mts-rs .guarantee-stamp{bottom:20px;padding:18px 20px;right:18px}
+.mts-rs .guarantee-stamp strong{font-size:40px}
+.mts-rs .guarantee-copy{padding:70px 24px}
+.mts-rs .guarantee-support{grid-template-columns:1fr}
+.mts-rs .guarantee-support div+div{border-left:0;border-top:1px solid var(--green-200);padding-left:0}
+.mts-rs .number-panel{min-height:610px;padding:35px 25px}
+.mts-rs .reviews-head{align-items:start;display:grid}
+.mts-rs .reviews-head p{text-align:left}
+.mts-rs .quote{padding:22px 20px}
+.mts-rs .quote:nth-child(3){margin-left:0}
+.mts-rs .review-trust{align-items:start;display:grid}
+.mts-rs .trust-tags{justify-content:flex-start}
+.mts-rs .next-step-photo{min-height:430px}
+.mts-rs .photo-quote{bottom:28px;left:18px;right:18px}
+.mts-rs .next-step-copy{padding:68px 18px 76px}
+.mts-rs .final{padding:78px 0}
+.mts-rs .lp-footer{gap:16px;grid-template-columns:1fr;justify-items:start;padding:32px 18px}
+.mts-rs .lp-footer p{text-align:left}
+.mts-rs .lp-footer-contact{justify-content:flex-start}
+.mts-rs .mobile-cta{background:var(--white);border-top:1px solid var(--line);bottom:0;display:flex;gap:10px;left:0;padding:10px 12px;position:fixed;right:0;z-index:40}
+.mts-rs .mobile-cta .button{flex:1;font-size:13px;min-height:46px;padding:9px 12px}
+.mts-rs .mobile-cta .button:first-child{background:transparent;border-color:var(--green-800);color:var(--green-800)}
+}
+@media(prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}
+.mts-rs .button{transition:none}
+}

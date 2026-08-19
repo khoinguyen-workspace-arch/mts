@@ -1,0 +1,239 @@
+html{scroll-behavior:smooth}
+@media(max-width:650px){body{padding-bottom:62px}} /* keeps the fixed mobile CTA bar from covering the theme footer */
+
+.mts-lp{--deep:#0D3328;--dark:#1C2720;--primary:#1A5C48;--green700:#1E6B54;--green:#2A7A60;--mint:#5BAE90;--soft:#88C4A8;--green200:#C8DED7;--pale:#E5F4EE;--wash:#F2FAF6;--ink:#2D2D2D;--muted:#666666;--line:#DCDCDC;--card-line:#F0F0F0;--white:#FFFFFF;--error:#CC3333;--serif:"DM Serif Display",Georgia,serif;--sans:"DM Sans",system-ui,sans-serif;--radius-card:12px;--radius-button:8px;--radius-pill:9999px;
+background:var(--wash);color:var(--ink);font-family:var(--sans);line-height:1.7;-webkit-font-smoothing:antialiased}
+.mts-lp *{box-sizing:border-box}
+.mts-lp a{color:inherit;text-decoration:none}
+.mts-lp button,.mts-lp input,.mts-lp select{font:inherit}
+.mts-lp .shell{margin:auto;width:min(1120px,calc(100% - 48px))}
+.mts-lp .eyebrow{color:var(--green);display:block;font-size:11px;font-weight:700;letter-spacing:.14em;margin-bottom:14px;text-transform:uppercase}
+.mts-lp .eyebrow.light{color:var(--soft)}
+.mts-lp .title{color:var(--primary);font:400 clamp(32px,4vw,40px)/1.15 var(--serif);letter-spacing:-.015em;margin:0 0 18px}
+.mts-lp .lead{color:var(--muted);font-size:16px;line-height:1.7;margin:0}
+.mts-lp .button{align-items:center;background:var(--primary);border:2px solid var(--primary);border-radius:var(--radius-button);color:#fff;cursor:pointer;display:inline-flex;font-size:15px;font-weight:600;gap:8px;justify-content:space-between;letter-spacing:.02em;padding:12px 24px;transition:background .15s,border-color .15s}
+.mts-lp .button:hover{background:var(--green700);border-color:var(--green700)}
+.mts-lp .button.light{background:#fff;border-color:#fff;color:var(--primary)}
+.mts-lp .button.light:hover{background:var(--pale);border-color:var(--pale)}
+.mts-lp .button.ghost{background:transparent;border:2px solid #fff;color:#fff}
+.mts-lp .button.ghost:hover{background:rgba(255,255,255,.1);border-color:#fff}
+.mts-lp .arrow{font-size:16px}
+.mts-lp [id]{scroll-margin-top:100px}
+
+/* LP header */
+.mts-lp .lp-header{align-items:center;background:rgba(255,255,255,.97);backdrop-filter:blur(14px);border-bottom:1px solid rgba(13,51,40,.08);display:flex;gap:20px;justify-content:space-between;min-height:72px;padding:0 5vw;position:sticky;top:0;z-index:50}
+.mts-lp .lp-header .logo{display:block;height:40px;width:auto}
+.mts-lp .lp-header-actions{align-items:center;display:flex;gap:22px}
+.mts-lp .lp-phone{color:var(--primary);font-size:14px;font-weight:700;white-space:nowrap}
+.mts-lp .lp-header .button{font-size:13px;gap:10px;padding:10px 18px;white-space:nowrap}
+
+/* Hero */
+.mts-lp .hero{background:linear-gradient(90deg,rgba(13,51,40,.97) 0%,rgba(13,51,40,.86) 48%,rgba(13,51,40,.38) 100%),url("https://morethanstrata.com.au/wp-content/uploads/2026/07/Background.png") center/cover;color:#fff;min-height:780px;overflow:hidden;padding:96px 0 86px;position:relative}
+.mts-lp .hero:after{background:radial-gradient(circle,rgba(91,174,144,.35),transparent 70%);content:"";height:420px;position:absolute;right:-120px;top:-120px;width:420px}
+.mts-lp .hero-layout{align-items:start;display:grid;gap:clamp(54px,7vw,96px);grid-template-columns:1.06fr .82fr;position:relative;z-index:2}
+.mts-lp .hero-copy{padding-top:42px}
+.mts-lp .hero h1{font:400 clamp(48px,6vw,64px)/1.05 var(--serif);letter-spacing:-.025em;margin:18px 0 20px;max-width:680px;color:#fff}
+.mts-lp .hero h1 span{color:var(--soft);display:block}
+.mts-lp .hero-sub{color:rgba(255,255,255,.82);font-size:18px;line-height:1.65;margin:0;max-width:620px}
+.mts-lp .hero-sub strong{color:#fff}
+.mts-lp .hero-proof{align-items:center;display:flex;gap:26px;margin-top:34px}
+.mts-lp .hero-proof strong{font:400 52px/1 var(--serif)}
+.mts-lp .hero-proof p{color:rgba(255,255,255,.7);font-size:13px;line-height:1.55;margin:0;max-width:245px}
+.mts-lp .hero-proof p b{color:#fff}
+.mts-lp .proof-rule{background:rgba(255,255,255,.2);height:52px;width:1px}
+.mts-lp .hero-note{color:rgba(255,255,255,.52);font-size:10px;margin:12px 0 0 76px}
+.mts-lp .scroll-cue{align-items:center;bottom:31px;color:rgba(255,255,255,.6);display:flex;font-size:11px;font-weight:700;gap:12px;letter-spacing:.12em;position:absolute;text-transform:uppercase}
+.mts-lp .scroll-cue:before{background:var(--soft);content:"";height:2px;width:32px}
+
+/* Form card + HubSpot form styling */
+.mts-lp .form-wrap{position:relative}
+.mts-lp .form-card{background:#fff;border:1px solid var(--card-line);border-left:4px solid var(--mint);border-radius:var(--radius-card);color:var(--ink);padding:31px 30px 27px;position:relative}
+.mts-lp .form-kicker{color:var(--green);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.mts-lp .form-card h2{color:var(--primary);font:400 32px/1.15 var(--serif);margin:8px 0 10px}
+.mts-lp .form-intro{color:var(--muted);font-size:14px;line-height:1.6;margin:0 0 20px}
+.mts-lp .form-card .hs-form fieldset{max-width:100%!important}
+.mts-lp .form-card .hs-form-field{margin-bottom:13px}
+.mts-lp .form-card .hs-form label{color:var(--ink);display:block;font-size:13px;font-weight:600;margin-bottom:5px}
+.mts-lp .form-card .hs-input{background:#fff;border:1.5px solid var(--line);border-radius:var(--radius-button);color:var(--ink);font-family:var(--sans);font-size:15px;min-width:0;outline:none;padding:11px 14px;width:100%!important}
+.mts-lp .form-card .hs-input:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(26,92,72,.12)}
+.mts-lp .form-card .hs-button{background:var(--primary);border:2px solid var(--primary);border-radius:var(--radius-button);color:#fff;cursor:pointer;font-family:var(--sans);font-size:15px;font-weight:600;letter-spacing:.02em;margin-top:4px;padding:12px 24px;transition:background .15s,border-color .15s;width:100%}
+.mts-lp .form-card .hs-button:hover{background:var(--green700);border-color:var(--green700)}
+.mts-lp .form-card .hs-error-msgs{color:var(--error);font-size:12px;list-style:none;margin:4px 0 0;padding:0}
+.mts-lp .form-card .hs-form-required{color:var(--error)}
+.mts-lp .form-card .submitted-message{color:var(--ink);font-size:14px;line-height:1.65;padding:24px 0}
+.mts-lp .form-trust{align-items:center;color:var(--muted);display:flex;font-size:11px;gap:7px;justify-content:center;margin:12px 0 0}
+.mts-lp .form-trust b{color:var(--green)}
+
+/* Proof strip */
+.mts-lp .proof-strip{background:var(--pale);color:var(--primary);display:grid;grid-template-columns:repeat(4,1fr);padding:0 5vw;position:relative;z-index:3}
+.mts-lp .proof-strip div{border-right:1px solid var(--green200);padding:24px 20px;text-align:center}
+.mts-lp .proof-strip div:last-child{border:0}
+.mts-lp .proof-strip strong{display:block;font:400 38px/1 var(--serif)}
+.mts-lp .proof-strip span{color:var(--muted);display:block;font-size:13px;margin-top:6px}
+
+/* Pain */
+.mts-lp .pain{background:#fff;overflow:hidden;padding:96px 0;position:relative}
+.mts-lp .pain:before{color:rgba(26,92,72,.045);content:"CHASING";font:400 170px/1 var(--serif);left:-10px;position:absolute;top:18px}
+.mts-lp .pain-grid{align-items:center;display:grid;gap:clamp(55px,8vw,100px);grid-template-columns:.92fr 1.08fr;position:relative}
+.mts-lp .pain-copy{position:relative;z-index:2}
+.mts-lp .pain-copy .title span{color:var(--green)}
+.mts-lp .pain-copy p{color:var(--muted);font-size:16px;line-height:1.7}
+.mts-lp .pain-copy p strong{color:var(--ink)}
+.mts-lp .text-link{background:transparent;border:2px solid var(--primary);border-radius:var(--radius-button);color:var(--primary);display:inline-flex;font-size:15px;font-weight:600;margin-top:18px;padding:12px 24px}
+.mts-lp .text-link:hover{background:var(--wash)}
+.mts-lp .collage{height:560px;position:relative}
+.mts-lp .image-main{background:linear-gradient(rgba(13,51,40,.08),rgba(13,51,40,.08)),url("https://morethanstrata.com.au/wp-content/uploads/2026/07/Parramatta.png") center/cover;border-radius:var(--radius-card);height:455px;position:absolute;right:0;top:0;width:82%}
+.mts-lp .image-small{background:url("https://morethanstrata.com.au/wp-content/uploads/2022/05/Create-an-edible-garden.jpeg") center/cover;border-radius:var(--radius-card);bottom:0;height:215px;left:0;width:51%}
+.mts-lp .image-statement{background:var(--primary);border-left:4px solid var(--mint);border-radius:var(--radius-card);bottom:26px;color:#fff;padding:24px 26px;position:absolute;right:0;width:51%}
+.mts-lp .image-statement strong{display:block;font:400 27px/1.12 var(--serif)}
+.mts-lp .image-statement span{color:var(--soft);display:block;font-size:11px;font-weight:700;letter-spacing:.12em;margin-top:10px;text-transform:uppercase}
+.mts-lp .pattern{background-image:linear-gradient(30deg,rgba(91,174,144,.15) 12%,transparent 12.5%,transparent 87%,rgba(91,174,144,.15) 87.5%),linear-gradient(150deg,rgba(91,174,144,.15) 12%,transparent 12.5%,transparent 87%,rgba(91,174,144,.15) 87.5%);background-size:38px 66px;height:150px;position:absolute;width:180px}
+
+/* Exit-support offer */
+.mts-lp .offer{background:var(--deep);color:#fff;overflow:hidden;position:relative}
+.mts-lp .offer-grid{display:grid;grid-template-columns:.9fr 1.1fr;min-height:570px}
+.mts-lp .offer-image{background:linear-gradient(90deg,rgba(13,51,40,.08),rgba(13,51,40,.55)),url("https://morethanstrata.com.au/wp-content/uploads/2023/01/How-Can-I-Switch-Strata-Management-The-4-Steps-Involved.jpg") center/cover;min-height:570px}
+.mts-lp .offer-copy{align-content:center;display:grid;padding:75px clamp(38px,7vw,96px);position:relative}
+.mts-lp .offer-copy:before{background:var(--mint);content:"";height:4px;left:0;position:absolute;top:0;width:100%}
+.mts-lp .offer-label{background:var(--pale);border-radius:var(--radius-pill);color:var(--green700);display:inline-flex;font-size:12px;font-weight:600;justify-self:start;letter-spacing:.04em;margin-bottom:18px;padding:4px 12px}
+.mts-lp .offer h2{font:400 clamp(32px,4vw,40px)/1.15 var(--serif);margin:0 0 18px;color:#fff}
+.mts-lp .offer h2 span{color:var(--soft)}
+.mts-lp .offer p{color:rgba(255,255,255,.75);font-size:16px;line-height:1.7;margin:0 0 26px;max-width:580px}
+.mts-lp .offer p strong{color:#fff}
+.mts-lp .offer-fine{color:rgba(255,255,255,.52);font-size:11px;line-height:1.5;margin-top:12px}
+
+/* Cost of bad service */
+.mts-lp .cost{background:var(--wash);padding:96px 0}
+.mts-lp .cost-head{display:grid;gap:55px;grid-template-columns:1.1fr .9fr}
+.mts-lp .cost-head .lead{align-self:end}
+.mts-lp .cost-grid{display:grid;gap:20px;grid-template-columns:repeat(3,1fr);margin-top:52px}
+.mts-lp .cost-card{background:#fff;border:1px solid var(--card-line);border-left:4px solid var(--mint);border-radius:var(--radius-card);min-height:295px;padding:28px 24px;position:relative}
+.mts-lp .cost-card:nth-child(2){background:var(--primary);border-color:var(--primary);border-left-color:var(--mint);color:#fff;transform:translateY(-12px)}
+.mts-lp .cost-card .index{color:var(--mint);font:400 30px/1 var(--serif)}
+.mts-lp .cost-card h3{color:var(--primary);font:400 24px/1.2 var(--serif);margin:48px 0 10px}
+.mts-lp .cost-card p{color:var(--muted);font-size:14.5px;line-height:1.65;margin:0}
+.mts-lp .cost-card:nth-child(2) h3{color:#fff}
+.mts-lp .cost-card:nth-child(2) p{color:rgba(255,255,255,.75)}
+.mts-lp .cost-card:nth-child(2) .index{color:var(--soft)}
+
+/* Five steps */
+.mts-lp .steps{background:#fff;overflow:hidden;padding:96px 0 110px;position:relative}
+.mts-lp .steps:after{background:var(--primary);bottom:0;content:"";height:335px;left:0;position:absolute;width:100%}
+.mts-lp .steps-head{align-items:end;display:flex;gap:40px;justify-content:space-between;margin-bottom:58px}
+.mts-lp .steps-head .lead{max-width:430px}
+.mts-lp .step-stage{position:relative;z-index:2}
+.mts-lp .step-line{background:var(--green200);height:1px;left:7%;position:absolute;right:7%;top:40px}
+.mts-lp .step-grid{display:grid;gap:14px;grid-template-columns:repeat(5,1fr);position:relative}
+.mts-lp .step-card{background:var(--wash);border:1px solid var(--card-line);border-left:4px solid var(--mint);border-radius:var(--radius-card);min-height:355px;padding:26px 22px;position:relative;transition:transform .2s}
+.mts-lp .step-card:hover{transform:translateY(-5px)}
+.mts-lp .step-card:nth-child(even){margin-top:45px}
+.mts-lp .step-number{align-items:center;background:var(--primary);border:7px solid #fff;border-radius:50%;color:#fff;display:flex;font:400 22px/1 var(--serif);height:58px;justify-content:center;margin:-59px 0 30px;width:58px}
+.mts-lp .step-card span{color:var(--green);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.mts-lp .step-card h3{color:var(--primary);font:400 24px/1.2 var(--serif);margin:10px 0}
+.mts-lp .step-card p{color:var(--muted);font-size:14px;line-height:1.6}
+.mts-lp .step-card .micro-cta{bottom:23px;color:var(--primary);font-size:12px;font-weight:600;position:absolute}
+.mts-lp .steps-cta{align-items:center;color:#fff;display:flex;gap:35px;justify-content:center;margin:76px auto 0;position:relative;z-index:3}
+.mts-lp .steps-cta strong{font:400 30px/1.15 var(--serif)}
+
+/* Social proof */
+.mts-lp .social{background:var(--primary);color:#fff;padding:96px 0}
+.mts-lp .social-grid{align-items:center;display:grid;gap:clamp(55px,8vw,100px);grid-template-columns:.78fr 1.22fr}
+.mts-lp .score{background:#fff;border:1px solid var(--green200);border-radius:var(--radius-card);color:var(--primary);padding:0}
+.mts-lp .score-inner{background:#fff;border-left:4px solid var(--mint);border-radius:var(--radius-card);padding:38px}
+.mts-lp .score strong{display:block;font:400 64px/1 var(--serif)}
+.mts-lp .score span{color:var(--green);font-size:13px;font-weight:600}
+.mts-lp .score p{color:var(--muted);font-size:14px;line-height:1.6;margin:20px 0 0}
+.mts-lp .quotes{display:grid;gap:18px}
+.mts-lp .quote{background:#fff;border:1px solid var(--card-line);border-left:4px solid var(--mint);border-radius:var(--radius-card);color:var(--ink);margin:0;padding:22px 24px}
+.mts-lp .quote blockquote{font:italic 400 15px/1.7 var(--sans);margin:0 0 12px}
+.mts-lp .quote figcaption{color:var(--green);font-size:13px;font-weight:600}
+.mts-lp .stars{color:var(--green);font-size:12px;letter-spacing:.13em;margin-bottom:10px}
+
+/* Final CTA */
+.mts-lp .final{background:linear-gradient(90deg,rgba(13,51,40,.95),rgba(13,51,40,.75)),url("https://morethanstrata.com.au/wp-content/uploads/2020/03/CONCIERGE-GEORGE-FETTING-002.jpg") center/cover;color:#fff;padding:96px 0;position:relative}
+.mts-lp .final-grid{align-items:center;display:grid;gap:80px;grid-template-columns:1fr auto}
+.mts-lp .final h2{font:400 clamp(32px,4vw,40px)/1.15 var(--serif);margin:0 0 18px;max-width:680px;color:#fff}
+.mts-lp .final p{color:rgba(255,255,255,.75);font-size:16px;line-height:1.7;max-width:650px}
+.mts-lp .final-actions{display:grid;gap:12px;min-width:280px}
+.mts-lp .final-actions .button{width:100%}
+.mts-lp .final-actions small{color:rgba(255,255,255,.58);font-size:11px;text-align:center}
+
+/* LP footer */
+.mts-lp .lp-footer{align-items:center;background:#0A261E;color:#fff;display:grid;gap:26px;grid-template-columns:auto 1fr auto;padding:38px 5vw}
+.mts-lp .lp-footer .logo{display:block;filter:brightness(0) invert(1);height:36px;width:auto}
+.mts-lp .lp-footer p{color:rgba(255,255,255,.55);font-size:11px;line-height:1.6;margin:0;text-align:center}
+.mts-lp .lp-footer-contact{display:flex;flex-wrap:wrap;gap:10px 20px;justify-content:flex-end}
+.mts-lp .lp-footer-contact a{color:var(--soft);font-size:12px;font-weight:600;white-space:nowrap}
+
+/* Mobile sticky CTA */
+.mts-lp .mobile-cta{display:none}
+
+/* Responsive */
+@media(max-width:1000px){
+.mts-lp .hero{min-height:auto}
+.mts-lp .hero-layout{grid-template-columns:1fr}
+.mts-lp .hero-copy{padding-top:18px}
+.mts-lp .form-wrap{margin:auto;max-width:600px;width:100%}
+.mts-lp .pain-grid,.mts-lp .offer-grid,.mts-lp .social-grid{grid-template-columns:1fr}
+.mts-lp .pain-copy{max-width:740px}
+.mts-lp .collage{margin:auto;max-width:720px;width:100%}
+.mts-lp .offer-image{min-height:430px}
+.mts-lp .offer-copy{min-height:520px}
+.mts-lp .cost-head{grid-template-columns:1fr}
+.mts-lp .step-grid{grid-template-columns:repeat(2,1fr)}
+.mts-lp .step-card:nth-child(even){margin-top:0}
+.mts-lp .step-card{margin-top:40px}
+.mts-lp .step-line{display:none}
+.mts-lp .steps:after{height:570px}
+.mts-lp .final-grid{align-items:start;grid-template-columns:1fr}
+.mts-lp .final-actions{max-width:370px}
+}
+@media(max-width:650px){
+.mts-lp .shell{width:calc(100% - 36px)}
+.mts-lp .lp-header{min-height:62px;padding:0 18px}
+.mts-lp .lp-header .logo{height:32px}
+.mts-lp .lp-phone{display:none}
+.mts-lp .lp-footer{gap:16px;grid-template-columns:1fr;justify-items:start;padding:32px 18px}
+.mts-lp .lp-footer p{text-align:left}
+.mts-lp .lp-footer-contact{justify-content:flex-start}
+.mts-lp .hero{padding:72px 0 65px}
+.mts-lp .hero h1{font-size:48px}
+.mts-lp .hero-sub{font-size:16px}
+.mts-lp .hero-proof{align-items:flex-start}
+.mts-lp .hero-proof strong{font-size:46px}
+.mts-lp .hero-note{margin-left:0}
+.mts-lp .scroll-cue{display:none}
+.mts-lp .form-card{padding:25px 19px}
+.mts-lp .proof-strip,.mts-lp .pain-grid,.mts-lp .cost-grid,.mts-lp .step-grid,.mts-lp .social-grid{grid-template-columns:1fr}
+.mts-lp .proof-strip{padding:8px 18px}
+.mts-lp .proof-strip div{border-bottom:1px solid var(--green200);border-right:0;padding:15px}
+.mts-lp .proof-strip div:last-child{border-bottom:0}
+.mts-lp .pain{padding:76px 0}
+.mts-lp .pain:before{font-size:90px}
+.mts-lp .collage{height:470px}
+.mts-lp .image-main{height:370px;width:90%}
+.mts-lp .image-small{height:175px;width:56%}
+.mts-lp .image-statement{bottom:8px;padding:18px;width:58%}
+.mts-lp .image-statement strong{font-size:21px}
+.mts-lp .offer-image{min-height:300px}
+.mts-lp .offer-copy{min-height:520px;padding:65px 24px}
+.mts-lp .cost{padding:76px 0}
+.mts-lp .cost-grid{gap:12px}
+.mts-lp .cost-card:nth-child(2){transform:none}
+.mts-lp .steps{padding:76px 0 90px}
+.mts-lp .steps-head{align-items:start;display:grid}
+.mts-lp .step-card{min-height:290px}
+.mts-lp .steps:after{height:1010px}
+.mts-lp .steps-cta{align-items:start;display:grid;justify-items:start;margin-top:55px}
+.mts-lp .score-inner{padding:30px 22px}
+.mts-lp .quote blockquote{font-size:15px}
+.mts-lp .final{padding:76px 0}
+.mts-lp .final-grid{gap:42px}
+.mts-lp .mobile-cta{background:#fff;border-top:1px solid var(--line);bottom:0;display:flex;gap:10px;left:0;padding:10px 12px;position:fixed;right:0;z-index:40}
+.mts-lp .mobile-cta .button{flex:1;font-size:13px;justify-content:center;padding:10px 12px}
+.mts-lp .mobile-cta a:first-child{background:transparent;border-color:var(--primary);color:var(--primary)}
+}
+@media(prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}
+.mts-lp .button,.mts-lp .step-card{transition:none}
+}
